@@ -1,14 +1,27 @@
 body {
   background: linear-gradient(to bottom, #4fc3f7, #0288d1, #01579b, #001f3f);
+  size: cover;
+  background-repeat: no-repeat;
   color: ghostwhite;
+  font-family: "Times New Roman", Times, serif;
 }
-
+/* NAVIGATION */
 nav {
-  color: rgba (0, 31, 63, 0.7);
+  /* places items in a row */
+  display: flex;
+  /* pushes items apart */
+  justify-content: space-between;
+  /* vertically centers items */
+  align-items: center;
+  /* adds space inside the nav */
+  padding: 15px 40px;
+
+  background-color: rgba(0, 31, 63, 0.8);
 }
 
 nav a {
   color: ghostwhite;
+  font-family: "Times New Roman", Times, serif;
 }
 nav a:hover {
   color: #7fdbff;
@@ -16,6 +29,15 @@ nav a:hover {
 nav a:active {
   color: #2ec4b6;
 }
+nav ul {
+  /* places links in a row */
+  display: flex;
+  /* space between links */
+  gap: 25px;
+
+  list-style: none;
+}
+/* HEADINGS */
 h1 {
   color: ghostwhite;
 }
@@ -27,4 +49,92 @@ h3 {
 }
 p {
   color: #d6eaf8;
+}
+
+/* IMAGES, DIVS, ID'S AND CLASSES */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  /* Let's you place it anywhere above the image. */
+  position: absolute;
+  /* moves the heading to the center. */
+  top: 50%;
+  left: 50%;
+  /* perfectly centers it. */
+  transform: translate(-50%, -50%);
+
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* OCEAN ZONES */
+.zones {
+  /* adds spacing around section */
+  padding: 50px;
+  text-align: center;
+}
+
+.card-container {
+  /* uses Flexbox layout */
+  display: flex;
+  /* moves cards to the next row */
+  flex-wrap: wrap;
+  /* centers cards */
+  justify-content: center;
+  /* adds space between cards */
+  gap: 20px;
+  /* adds space above cards */
+  margin-top: 30px;
+}
+
+.card {
+  width: 220px;
+  /* adds space inside cards */
+  padding: 20px;
+  /* rounds corners */
+  border-radius: 15px;
+  /* transparent card background */
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid #2ec4b6;
+  /* smooth animation */
+  transition: 0.3s;
+}
+
+.card:hover {
+  /* moves card upward */
+  transform: translateY(-5px);
+  /* adds glow effect */
+  box-shadow: 0 0 15px #7fdbff;
+}
+
+/* FUN FACTS */
+
+.facts {
+  /* adds spacing around section */
+  padding: 50px;
+
+  text-align: center;
+}
+
+.facts p {
+  /* adds space between facts */
+  margin: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  /* adds spacing */
+  padding: 20px;
+  /* dark transparent background */
+  background-color: rgba(0, 0, 0, 0.4);
 }
