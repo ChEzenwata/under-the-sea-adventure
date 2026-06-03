@@ -10,7 +10,7 @@ nav {
   /* places items in a row */
   display: flex;
   /* pushes items apart */
-  justify-content: space-between;
+  justify-content: center;
   /* vertically centers items */
   align-items: center;
   /* adds space inside the nav */
@@ -22,6 +22,9 @@ nav {
 nav a {
   color: ghostwhite;
   font-family: "Times New Roman", Times, serif;
+  list-style: none;
+  text-decoration: none;
+  font-size: larger;
 }
 nav a:hover {
   color: #7fdbff;
@@ -37,9 +40,18 @@ nav ul {
 
   list-style: none;
 }
+nav ul li {
+  /* Adds separator line */
+  border-right: 1px solid white;
+  /* Space before line */
+  padding-right: 15px;
+  /* Space after line */
+  margin-right: 15px;
+}
 /* HEADINGS */
 h1 {
   color: ghostwhite;
+  text-align: center;
 }
 h2 {
   color: #7fdbff;
@@ -51,7 +63,7 @@ p {
   color: #d6eaf8;
 }
 
-/* IMAGES, DIVS, ID'S AND CLASSES */
+/* HERO */
 .hero {
   position: relative;
 }
@@ -115,6 +127,55 @@ p {
   box-shadow: 0 0 15px #7fdbff;
 }
 
+/* PAGE BANNER */
+
+.page-banner {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.page-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.page-banner p {
+  font-size: 1.2rem;
+  color: #d6eaf8;
+}
+
+/* CREATURE SECTIONS */
+
+.creature-section {
+  padding: 40px;
+}
+
+.creature-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7fdbff;
+}
+
+/* CREATURE GRID */
+
+.creature-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+}
+
+/* CARD IMAGES */
+
+.card img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
 /* FUN FACTS */
 
 .facts {
