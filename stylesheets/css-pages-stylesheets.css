@@ -25,9 +25,23 @@ nav a {
   list-style: none;
   text-decoration: none;
   font-size: larger;
+
+  padding: 10px 20px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid #2ec4b6;
+
+  border-radius: 15px;
+
+  transition: 0.3s;
 }
 nav a:hover {
-  color: #7fdbff;
+  transform: translateY(-5px); /* Moves link up slightly */
+
+  box-shadow: 0 0 15px #7fdbff; /* Adds glow effect */
+
+  color: #7fdbff; /* Changes text color */
 }
 nav a:active {
   color: #2ec4b6;
@@ -47,6 +61,11 @@ nav ul li {
   padding-right: 15px;
   /* Space after line */
   margin-right: 15px;
+}
+
+nav ul li:last-child {
+  /* removes last line */
+  border-right: none;
 }
 /* HEADINGS */
 h1 {
@@ -362,4 +381,25 @@ footer {
     /* Fades bubbles out */
     opacity: 0;
   }
+}
+
+.nav-effects {
+  width: 220px;
+  /* adds space inside cards */
+  padding: 20px;
+  /* rounds corners */
+  border-radius: 15px;
+  /* transparent card background */
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border: 1px solid #2ec4b6;
+  /* smooth animation */
+  transition: 0.3s;
+}
+
+.nav-effects:hover {
+  /* moves card upward */
+  transform: translateY(-5px);
+  /* adds glow effect */
+  box-shadow: 0 0 15px #7fdbff;
 }
