@@ -1,9 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: linear-gradient(to bottom, #4fc3f7, #0288d1, #01579b, #001f3f);
   size: cover;
   background-repeat: no-repeat;
   color: ghostwhite;
   font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
 }
 /* NAVIGATION */
 nav {
@@ -71,12 +76,14 @@ nav ul li:last-child {
 h1 {
   color: ghostwhite;
   text-align: center;
+  font-size: 30px;
 }
 h2 {
-  color: #7fdbff;
+  color: ghostwhite;
+  padding: 10px 20px;
 }
 h3 {
-  color: #2ec4b6;
+  color: ghostwhite;
 }
 p {
   color: #d6eaf8;
@@ -132,7 +139,7 @@ p {
   /* rounds corners */
   border-radius: 15px;
   /* transparent card background */
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #0288d1;
 
   border: 1px solid #2ec4b6;
   /* smooth animation */
@@ -182,9 +189,8 @@ main {
 /* CREATURE GRID */
 
 .creature-grid {
-  display: grid;
-  /* adjusts columns based on screen size */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  justify-content: space-between;
 
   gap: 25px;
 }
@@ -284,7 +290,7 @@ footer {
 
   margin: 20px auto;
 
-  width: 70%;
+  width: 30%;
 
   text-align: center;
 
@@ -349,22 +355,14 @@ footer {
 
 /* styles the third bubble */
 .bubble:nth-child(3) {
-  left: 50%;
-  width: 35px;
-  height: 35px;
-  animation-duration: 10s;
-}
-
-/* styles the fourth bubble */
-.bubble:nth-child(4) {
   left: 70%;
   width: 60px;
   height: 60px;
   animation-duration: 14s;
 }
 
-/* styles the fifth bubble */
-.bubble:nth-child(5) {
+/* styles the fourth bubble */
+.bubble:nth-child(4) {
   left: 90%;
   width: 30px;
   height: 30px;
